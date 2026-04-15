@@ -1,0 +1,26 @@
+"""
+Setup script for the Backtesting Framework package.
+"""
+from setuptools import setup, find_packages
+
+setup(
+    name="backtester",
+    version="1.0.0",
+    description="Event-Driven Backtesting Framework for Quantitative Strategies",
+    packages=find_packages(),
+    python_requires=">=3.10",
+    install_requires=[
+        "pandas>=1.5.0",
+        "numpy>=1.23.0",
+        "scipy>=1.9.0",
+        "yfinance>=0.2.18",
+        "pyarrow>=10.0.0",
+        "matplotlib>=3.6.0",
+        "plotly>=5.11.0",
+        "seaborn>=0.12.0",
+        "jinja2>=3.1.0",
+    ],
+    extras_require={
+        "dev": ["pytest>=7.2.0"],
+    },
+)
